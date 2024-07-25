@@ -7,11 +7,8 @@
  * @Describe: 
  * @Mark: ૮(˶ᵔ ᵕ ᵔ˶)ა
  */
-import { useState } from 'react'
 import { Button } from 'antd';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Button type="primary">Button</Button>
