@@ -48,9 +48,6 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
         version: 0.4.9(eslint@8.57.0)
-      prisma:
-        specifier: ^5.17.0
-        version: 5.17.0
       typescript:
         specifier: ^5.2.2
         version: 5.5.4
@@ -1890,9 +1887,11 @@ snapshots:
     optionalDependencies:
       prisma: 5.17.0
 
-  '@prisma/debug@5.17.0': {}
+  '@prisma/debug@5.17.0':
+    optional: true
 
-  '@prisma/engines-version@5.17.0-31.393aa359c9ad4a4bb28630fb5613f9c281cde053': {}
+  '@prisma/engines-version@5.17.0-31.393aa359c9ad4a4bb28630fb5613f9c281cde053':
+    optional: true
 
   '@prisma/engines@5.17.0':
     dependencies:
@@ -1900,16 +1899,19 @@ snapshots:
       '@prisma/engines-version': 5.17.0-31.393aa359c9ad4a4bb28630fb5613f9c281cde053
       '@prisma/fetch-engine': 5.17.0
       '@prisma/get-platform': 5.17.0
+    optional: true
 
   '@prisma/fetch-engine@5.17.0':
     dependencies:
       '@prisma/debug': 5.17.0
       '@prisma/engines-version': 5.17.0-31.393aa359c9ad4a4bb28630fb5613f9c281cde053
       '@prisma/get-platform': 5.17.0
+    optional: true
 
   '@prisma/get-platform@5.17.0':
     dependencies:
       '@prisma/debug': 5.17.0
+    optional: true
 
   '@rc-component/async-validator@5.0.4':
     dependencies:
@@ -2665,6 +2667,7 @@ snapshots:
   prisma@5.17.0:
     dependencies:
       '@prisma/engines': 5.17.0
+    optional: true
 
   punycode@2.3.1: {}
 
