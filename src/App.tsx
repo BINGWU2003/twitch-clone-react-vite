@@ -8,10 +8,14 @@
  * @Mark: ૮(˶ᵔ ᵕ ᵔ˶)ა
  */
 import { Button } from 'antd';
+import { getAllItems } from './apis/item';
 function App() {
+  const handleGetAllItems = async () => {
+    await getAllItems();
+  }
   return (
     <>
-      <Button type="primary">Button</Button>
+      <Button type="primary" onClick={handleGetAllItems}>GetItems</Button>
     </>
   )
 }
